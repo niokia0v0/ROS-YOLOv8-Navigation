@@ -28,6 +28,7 @@ A fully autonomous navigation system for a Turtlebot3. The robot uses a single R
 1.  **Dependencies**: ROS (Noetic/Melodic), Python 3, `ultralytics` (YOLOv8), `cv_bridge`, OpenCV.
 2.  **Execution**: The perception and control nodes run asynchronously to ensure the control loop remains unblocked by image processing times.
 3.  **Paths**: If re-training the model, update the local workspace paths and Roboflow API configurations in the training script.
+4.  **Pre-trained Model**: You can directly use the provided weights in the `models/` directory for inference. No need to retrain unless you are adapting to a new environment.
 
 ## Results
 
@@ -35,7 +36,7 @@ A fully autonomous navigation system for a Turtlebot3. The robot uses a single R
 The physical track used for testing, featuring intersections, crosswalks, parking zones, and directional signs.
 <br>
 <div align="center">
-  <img src="images/carte.jpg" width="80%" alt="Track Environment">
+  <img src="images/carte.png" width="80%" alt="Track Environment">
 </div>
 
 <br>
@@ -44,7 +45,7 @@ The physical track used for testing, featuring intersections, crosswalks, parkin
 Model predictions on the validation set. Even at 128x128 resolution, the model successfully segments the navigable road and identifies traffic signs.
 <br>
 <div align="center">
-  <img src="images/val_batch_pred.jpg" width="80%" alt="YOLOv8 Predictions">
+  <img src="images/val_batch_pred.png" width="80%" alt="YOLOv8 Predictions">
 </div>
 
 <br>
