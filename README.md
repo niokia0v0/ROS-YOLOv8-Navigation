@@ -2,6 +2,7 @@
 # 基于 YOLOv8 的 ROS 自主导航系统
 
 A fully autonomous navigation system for a Turtlebot3. The robot uses a single Raspberry Pi camera to perceive its environment via yolov8n-seg and navigates the track using a Finite State Machine with artificial potential fields method. It can stay on track, stop for pedestrians (crosswalk), avoid obstacles, and autonomously park.
+
 本项目是一个为 Turtlebot3 开发的自主导航系统。机器人仅依赖单目树莓派摄像头，通过 yolov8n-seg 模型感知环境，并结合人工势场法及状态机完成巡航。系统支持车道保持、行人避让（斑马线）、动态避障以及自动泊车功能。
 
 ## Tech Stack & Pipeline
